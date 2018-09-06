@@ -53,8 +53,8 @@ namespace ImagePermutatorLibrary
                         Rectangle insertPosition = new Rectangle(
                             borderThicknessW + col * (CropArea.Width + borderThicknessW),
                             borderThicknessH + row * (CropArea.Height + borderThicknessH),
-                            CropArea.Width,
-                            CropArea.Height);
+                            CroppedImage.Width,
+                            CroppedImage.Height);
                         imageHelper.DrawImage(CroppedImage, insertPosition, new Rectangle(0, 0, CroppedImage.Width, CroppedImage.Height), GraphicsUnit.Pixel);
                     }
                 }
